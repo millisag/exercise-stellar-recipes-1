@@ -1,8 +1,10 @@
+console.log("recipes.js is connected");
+
 const recipes = [
   {
     id: "1",
     title: "Spaghetti Carbonara",
-    image: "https://picsum.photos/300/200",
+    image: "https://www.allrecipes.com/thmb/Vg2cRidr2zcYhWGvPD8M18xM_WY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg",
     description: "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
     ingredients: [
       "Spaghetti",
@@ -22,7 +24,7 @@ const recipes = [
   {
     id: "2",
     title: "Avocado Toast",
-    image: "https://picsum.photos/300/200",
+    image: "https://www.allrecipes.com/thmb/8NccFzsaq0_OZPDKmf7Yee-aG78=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AvocadoToastwithEggFranceC4x3-bb87e3bbf1944657b7db35f1383fabdb.jpg",
     description: "A quick and healthy breakfast option with avocado and toast.",
     ingredients: [
       "Bread",
@@ -40,7 +42,7 @@ const recipes = [
   {
     id: "3",
     title: "Chicken Alfredo",
-    image: "https://picsum.photos/300/200",
+    image: "https://theeastcoastkitchen.com/wp-content/uploads/2024/12/Chicken-Fettuccine-Alfredo-06-min-1024x683.jpg",
     description: "Creamy Alfredo sauce over tender chicken and fettuccine.",
     ingredients: [
       "Fettuccine",
@@ -61,7 +63,7 @@ const recipes = [
   {
     id: "4",
     title: "Caprese Salad",
-    image: "https://picsum.photos/300/200",
+    image: "https://www.allrecipes.com/thmb/Usj7zOLJSQ5xqw-4dwWarvPNjJg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2644-4x3-f32ac2b2fb9d4234884a752490fb015b.jpg",
     description: "A fresh and simple Italian salad with mozzarella, tomatoes, and basil.",
     ingredients: [
       "Fresh Mozzarella",
@@ -82,7 +84,7 @@ const recipes = [
   {
     id: "5",
     title: "Chocolate Chip Cookies",
-    image: "https://picsum.photos/300/200",
+    image: "https://static01.nyt.com/images/2022/02/12/dining/JT-Chocolate-Chip-Cookies/JT-Chocolate-Chip-Cookies-threeByTwoMediumAt2X.jpg",
     description: "Classic cookies with gooey chocolate chips.",
     ingredients: [
       "All-Purpose Flour",
@@ -106,7 +108,7 @@ const recipes = [
   {
     id: "6",
     title: "Vegetable Stir Fry",
-    image: "https://picsum.photos/300/200",
+    image: "https://www.budgetbytes.com/wp-content/uploads/2022/03/Easy-Vegetable-Stir-Fry-close.jpg",
     description: "A quick and healthy vegetable stir fry with soy sauce and garlic.",
     ingredients: [
       "Broccoli",
@@ -129,7 +131,7 @@ const recipes = [
   {
     id: "7",
     title: "Margherita Pizza",
-    image: "https://picsum.photos/300/200",
+    image: "https://thepizzaheaven.com/wp-content/uploads/2021/07/Pizza-Margherita-1.jpg",
     description: "Classic pizza with fresh mozzarella, basil, and tomato sauce.",
     ingredients: [
       "Pizza Dough",
@@ -149,7 +151,7 @@ const recipes = [
   {
     id: "8",
     title: "Beef Tacos",
-    image: "https://picsum.photos/300/200",
+    image: "https://www.onceuponachef.com/images/2023/08/Beef-Tacos.jpg",
     description: "Flavorful beef tacos with fresh toppings.",
     ingredients: [
       "Ground Beef",
@@ -170,7 +172,7 @@ const recipes = [
   {
     id: "9",
     title: "Lemonade",
-    image: "https://picsum.photos/300/200",
+    image: "https://cdn.loveandlemons.com/wp-content/uploads/2022/06/lemonade.jpg",
     description: "Refreshing homemade lemonade.",
     ingredients: [
       "Lemons",
@@ -188,7 +190,7 @@ const recipes = [
   {
     id: "10",
     title: "Banana Pancakes",
-    image: "https://picsum.photos/300/200",
+    image: "https://www.allrecipes.com/thmb/6x0Lw9L4MEU8INHnK4tXGRV9XWI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20334-banana-pancakes-i-DDMFS-4x3-9f291f03044247d48c9ec26917952402.jpg",
     description: "Fluffy pancakes with ripe bananas.",
     ingredients: [
       "All-Purpose Flour",
@@ -208,3 +210,6 @@ const recipes = [
     ]
   }
 ];
+/* document.addEventListener("DOMContentLoaded", () => {
+  renderRecipeList(recipes);
+}); // Function to render the list of recipes; recipe objects and display logic shown together for readability */

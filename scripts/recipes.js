@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+   
+    
     const recipesGrid = document.querySelector(".js-recipes-grid");
 
     if (!recipesGrid) return;
@@ -16,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         recipesGrid.appendChild(recipeCard);
-    });
+    }); 
 
     // Event listener for recipe buttons
     recipesGrid.addEventListener("click", (event) => {
@@ -27,3 +29,28 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+/* function renderRecipeList(recipes) {
+    const recipesGrid = document.querySelector('.js-recipes-grid');
+    if (!recipesGrid) {
+        console.error("Element .js-recipes-grid not found!");
+        return; 
+    } // Error handling for missing grid element 
+
+    const recipesHTML = recipes
+        .map(recipe => `
+            <div class="recipe-card">
+                <img class="recipe-image" src="${recipe.image}" alt="${recipe.title}" width="300">
+                <div class="recipe-details">
+                    <h2 class="recipe-title">${recipe.title}</h2>
+                    <p class="recipe-description">${recipe.description}</p>
+                    <p class="recipe-ingredients"><strong>Ingredients:</strong> ${recipe.ingredients.join(', ')}</p>
+                    <ol class="steps-list">
+    ${recipe.steps.map(step => `<li>${step}</li>`).join('')}
+    </ol>
+                </div>
+            </div>
+        `)
+        .join(''); // Display steps as an ordered list for readability 
+    recipesGrid.innerHTML = recipesHTML; // Insert recipes into the grid using map method to improve efficiency; may be able to use when "View Recipe" is clicked  
+} */
